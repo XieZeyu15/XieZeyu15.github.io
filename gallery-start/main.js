@@ -55,4 +55,5 @@ function changeBackground() {
         overlay.style.backgroundColor = 'rgba(0,0,0,0)';
     }
 }
+
 btn.addEventListener('click', changeBackground);
