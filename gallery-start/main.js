@@ -42,6 +42,7 @@ for (let image of images) {
 // Add a click event listener to the <button> so that when it is clicked, a darken effect is applied to the full-size image. 
 // When it is clicked again, the darken effect is removed again.
 
+btn.addEventListener('click', changeBackground);
 function changeBackground() {
     const btnName = btn.getAttribute('class');
     if (btnName === 'dark') {
@@ -54,6 +55,4 @@ function changeBackground() {
         btn.textContent = 'Darken';
         overlay.style.backgroundColor = 'rgba(0,0,0,0)';
     }
-}
-
-btn.addEventListener('click', changeBackground);
+};
